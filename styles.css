@@ -1,16 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
-body{
-    width:100%;
-    box-sizing: border-box;
-    overflow: hidden;
+
+html {
+    scroll-behavior: smooth;
+   
+}
+
+body {
+   
+    width: 100%;
+    font-size: 62.5%;
     font-family: bangers, sans-serif;
 }
-.turn{
+
+/*------------------------------------------------- page accueil*/
+.accueil {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -20,116 +28,247 @@ body{
 
 }
 
-
-nav{
+/* ---------------------------------------------------barre nav*/
+nav {
     position: fixed;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 107px;
     background-color: red;
     opacity: 0.5;
-   
-    
+    z-index:1;
+
+
 }
 
 
- ul.left{
-    display:flex;
+ul.left {
+    display: flex;
     flex-direction: row;
-    float:left;
+    float: left;
     padding: 0 auto;
-   
 
- }
- ul.right{
+
+}
+
+ul.right {
     position: absolute;
     float: right;
     right: 20px;
- }
- li{
+}
+
+li {
     padding: 20px;
     color: white;
-    font-size: 2em;
-    opacity: 1;
-    
- }
- .titre{
+    font-size: 4em;
+   
+
+}
+/*------------------------------------------------- fin barre nav*/
+/*------------------------------------------- titre warhammer 40k*/
+.titre {
     position: absolute;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-  
-    
+    color: white;
     
 
- }
- h1{
-    position: absolute;
-    margin-top: 400px;
-    color: white;
+
+
+
+}
+
+h1 {
+   
+ 
     font-size: 6em;
     text-shadow: 5px 5px 5px black;
     
-    
-   
 }
-.carousel{
+/*----------------------------------------------------fin titre*/
+.carousel {
     position: absolute;
-    margin: 0 auto;
-    width:605px;
-    height: 605px;
+    width: 33%;
+    height: aspect-ratio 1/1;
     
 
- }
-.active{
-    width: 605px;
-    height:605px;
+
 }
-img{
-    width: 90%;
+
+.active {
+    width: 100%;
     height: aspect-ratio 1/1;
+    border-radius: 360px;
 }
-.d-block{
-    position: relative;
-    height: 600px;
-   
+
+
+
+.d-block {
+
+    width: 100%;
+    height: aspect-ratio 1/1;
     border-radius: 360px;
     box-shadow: 5px 5px 5px black;
 
 }
-.carousel-inner  {
-    margin-top: 300px;
+
+.carousel-inner {
+    width:100%;
+    height: aspect-ratio 1/1; 
+    margin-top: 280px;
+    border-radius: 360px;
 }
-.carousel-control-next, .carousel-control-prev{
-    margin-top: 600px;
-    color: black;
-    z-index: 3;
+
+
+
+
+
+
+
+
+.weapon{
+    display: flex;
+
 }
-.outils{
+.epee {
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    transform: rotateZ(62deg);
+    right: 60%;
+}
+
+.bolter{
+    position: absolute;
+    top:50%;
+  
+    transform: rotateZ(315deg);
+    left: 70%;
+    scale: 0.8;
+   
+}
+
+    
+
+
+.infos {
+    
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-
-
-}
-.sword{
-    position: absolute;
-    width:50%;
-    margin-top: 400px;
-    scale: 1;
-    transform: rotateZ(62deg);
-   right: 1100px;
-}
-.gun{
+    padding:5%;
+    background-image: url(images/fond.jpg);
     
-    position: absolute;
-    width:50%;
-    margin-top: 250px;
+}
+.stone{
+    width: 95%;
+    border-radius:30px ;
+    padding: 2% 12% 2% 12%;
+    background-image: url(images/fond-texture-mur-blanc-beton-blanc.jpg);
+}
+p{
+    width: 95%;
+    font-size: 2vw;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width:762px ){
+
+   
+    .epee{
+        display: none;
+     }
+    
+    .bolter{
+  
+   margin-top:255px;
+    left: 49px;
     scale: 0.6;
     transform: rotateZ(315deg);
-    left: 1200px;
+  
+  
+
+     }
+     .carousel {
+        position: absolute;
+        width: 70%;
+        height: aspect-ratio 1/1;
+    
 }
+}
+@media screen and (max-width:390px ){
+    
     
 
+    .epee{
+        display: none;
+     }
+    
+    .bolter{
+    left: -70px;
+    scale:0.5;
+    transform: rotateZ(315deg);
+  
+  
 
+     }
+     .carousel {
+        position: absolute;
+        width: 70%;
+        height: aspect-ratio 1/1;
+        margin: 0 auto;
+}
+p{
+   width:95%;
+    font-size: 5vw;
+    
+}
+}
+.shop{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/fond.jpg);
+}
+h2{
+   width: 100%;
+   color: white;
+}
 
+.gallery {
+    justify-content: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-gap: 100px;
+    justify-content: center;
+    
+}
+img.picture {
+    width: 100%;
+    height: aspect-ratio 1/1;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 0 50px black;
+}
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    width:100%;
+    height: 100%;
+
+      
+}
+.detail{
+    font-size:2vw;
+    color: black;
+}
+    
+    
