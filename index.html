@@ -18,15 +18,29 @@
   <!-----------------------------------------------PAGE ACCUEIL-------------------------------------------------------------------------------------->
   <!---------------------------------NAVBAR----------------------------------------------------------------------------------------------------------->
   <header>
-    <nav>
-      <ul class=" left">
-        <li>HOME</li>
-        <li>SHOP</li>
-        <li>LOG IN</li>
-      </ul>
-      <ul class="right">
-        <li>PANIER</li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img class="navbar-brand" src="images/logo.png">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">log in</a>
+            </li>
+            <li class="nav-item right">
+              <a class="nav-link">Panier</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <!---------------------------------------------------------FIN NAVBAR-------------------------------------------------------------------------------->
@@ -38,42 +52,61 @@
   <div class="accueil">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="100">
-          <img src="images/demon.jpg" class="d-block w-100" alt="demon">
+        <div class="carousel-item active" data-bs-interval="200">
+          <img src="images/demon.jpg" class="d-block w-100 " alt="demon">
+          <p class="who">Demon of Khorne</p>
+          <p class="mot">"Réveillez vous Ô morts car il n'y pas de repos pour vous sous terre."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/drukhari.jpg" class="d-block w-100" alt="drukhari">
+          <img src="images/drukhari.jpg" class="d-block w-100 img-fluid" alt="drukhari">
+          <p class="who">Drukhari</p>
+          <p class="mot">"Mes terres. Où les cris sont des fleurs et la douleur leur parfum."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/eldars.jpg" class="d-block w-100" alt="eldars">
+          <img src="images/eldars.jpg" class="d-block w-100 img-fluid" alt="eldars">
+          <p class="who">Eldars</p>
+          <p class="mot">"Les morts doivent rejoindre nos rangs, de crainte que nous rejoignions les leurs."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/genestealer.jpg" class="d-block w-100" alt="genestealer">
+          <img src="images/genestealer.jpg" class="d-block w-100 img-fluid" alt="genestealer">
+          <p class="who">Genestealer</p>
+          <p class="mot">"Nous sommes légions mes frères."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/captain.jpg" class="d-block w-100" alt="space-marines">
+          <img src="images/captain.jpg" class="d-block w-100 img-fluid" alt="space-marines">
+          <p class="who">Space Marine</p>
+          <p class="mot">"J'ai creusé ma tombe ici, et je triompherai ou périrai !"</p>
         </div>
         <div class="carousel-item">
-          <img src="images/orc.jpg" class="d-block w-100" alt="orc">
+          <img src="images/orc.jpg" class="d-block w-100 img-fluid" alt="orc">
+          <p class="who">Ork</p>
+          <p class="mot">"WaaaaaAAAAAGH !!!"</p>
         </div>
         <div class="carousel-item">
-          <img src="images/necron.jpg" class="d-block w-100" alt="necron">
+          <img src="images/necron.jpg" class="d-block w-100 img-fluid" alt="necron">
+          <p class="who">Necrons</p>
+          <p class="mot">"Toute vie sera déchirée à mon ordre."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/tau.jpg" class="d-block w-100" alt="tau">
+          <img src="images/tau.jpg" class="d-block w-100 img-fluid" alt="tau">
+          <p class="who">T'au</p>
+          <p class="mot">"Le fou restera sur le bord du chemin, affamé et transi. Rejoignez-nous, ami. Pour la liberté, l'harmonie et le Bien Suprême."</p>
         </div>
         <div class="carousel-item">
-          <img src="images/votann.jpg" class="d-block w-100" alt="votann">
+          <img src="images/votann.jpg" class="d-block w-100 img-fluid" alt="votann">
+          <p class="who">Votann</p>
+          <p class="mot">"La victoire n´exige nulle explication, la défaite n´en admet aucune."</p>
         </div>
       </div>
     </div>
+    
   </div>
   <!------------------------------------------------------------------FIN CARROUSEL-------------------------------------------------------------------------->
-    <div class="weapon">
+  <!--  <div class="weapon">
       
         <img class="epee" src="images/sword-removebg-preview.png" alt="epee">
               <img class="bolter" src="images/bolterbg.png" alt="bolter">
-    </div>
+    </div>-->
    <!---------------------------------------------------------------------fin accueil------------------------------------------------------------------------->
   
   <!----------------------------------------------------------------------page histoire------------------------------------------------------------------------->
@@ -82,7 +115,7 @@
     <div class="stone">
 
 
-   <p> Dans l'univers de Warhammer 40,000, l'humanité a perdu son statut de superpuissance intergalactique et son âge d'or technologique après l'hérésie d'Horus, rétrogradant l'humanité de plusieurs millénaires en arrière avec un mode de pensée très « religieux ». Dans l'Imperium, régime totalitaire, toutes les actions des forces armées sont guidées par un seul et même homme : l'Empereur. Éminent personnage de l'univers de Warhammer 40000, il se fait également appeler dieu de la race humaine ou encore seigneur de l'Imperium. Après sa victoire lui, au prix de son corps physique, contre Horus, son fils, il est perçu comme un véritable dieu3. Les restes de son vaste empire qui s'est étendu à travers toute la Voie Lactée est largement fédérée dans le cadre de l’Imperium.</p>
+   <p class="story"> Dans l'univers de Warhammer 40,000, l'humanité a perdu son statut de superpuissance intergalactique et son âge d'or technologique après l'hérésie d'Horus, rétrogradant l'humanité de plusieurs millénaires en arrière avec un mode de pensée très « religieux ». Dans l'Imperium, régime totalitaire, toutes les actions des forces armées sont guidées par un seul et même homme : l'Empereur. Éminent personnage de l'univers de Warhammer 40000, il se fait également appeler dieu de la race humaine ou encore seigneur de l'Imperium. Après sa victoire lui, au prix de son corps physique, contre Horus, son fils, il est perçu comme un véritable dieu3. Les restes de son vaste empire qui s'est étendu à travers toute la Voie Lactée est largement fédérée dans le cadre de l’Imperium.</p>
   </div>
   </div>
   <!-------------------------------------------------------------------------fin histoire----------------------------------------------------------------------------->

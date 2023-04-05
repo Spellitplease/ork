@@ -19,14 +19,16 @@ body {
 
 /*------------------------------------------------- page accueil*/
 .accueil {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    background-image: url(images/blood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
     width: 100%;
-    height: 1080px;
-    background-image: url(images/fond.jpg);
+    height: 100vh;
+  
 
 }
+
 
 /* ---------------------------------------------------barre nav*/
 nav {
@@ -35,41 +37,33 @@ nav {
     align-items: center;
     width: 100%;
     height: 107px;
-    background-color: red;
-    opacity: 0.5;
-    z-index:1;
-
-
-}
-
-
-ul.left {
-    display: flex;
-    flex-direction: row;
-    float: left;
-    padding: 0 auto;
-
-
-}
-
-ul.right {
-    position: absolute;
-    float: right;
-    right: 20px;
-}
-
-li {
-    padding: 20px;
-    color: white;
-    font-size: 4em;
+    background: radial-gradient(rgb(255, 69, 69), #424242);
    
+    z-index:1;
+}
+.navbar-brand{
+    background-image: url(images/logo.png);
 
+
+}
+
+
+
+
+.nav-link {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+}
+
+.left{
+    right: 0px;
 }
 /*------------------------------------------------- fin barre nav*/
 /*------------------------------------------- titre warhammer 40k*/
 .titre {
     position: absolute;
-    margin-top: 150px;
+  
     display: flex;
     justify-content: center;
     width: 100%;
@@ -84,14 +78,30 @@ li {
 h1 {
    
  
-    font-size: 6em;
+    font-size: 6vw;
     text-shadow: 5px 5px 5px black;
     
 }
 /*----------------------------------------------------fin titre*/
+
+
+.who{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+.mot{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    
+}
 .carousel {
     position: absolute;
-    width: 33%;
+    width: 20%;
     height: aspect-ratio 1/1;
     
 
@@ -101,7 +111,7 @@ h1 {
 .active {
     width: 100%;
     height: aspect-ratio 1/1;
-    border-radius: 360px;
+    
 }
 
 
@@ -110,16 +120,16 @@ h1 {
 
     width: 100%;
     height: aspect-ratio 1/1;
-    border-radius: 360px;
-    box-shadow: 5px 5px 5px black;
+   
+    
 
 }
 
 .carousel-inner {
     width:100%;
     height: aspect-ratio 1/1; 
-    margin-top: 280px;
-    border-radius: 360px;
+    margin-top:180px;
+    
 }
 
 
@@ -129,7 +139,7 @@ h1 {
 
 
 
-.weapon{
+/*.weapon{
     display: flex;
 
 }
@@ -149,91 +159,146 @@ h1 {
     left: 70%;
     scale: 0.8;
    
-}
+}*/
 
     
 
 
 .infos {
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+   position: absolute;
+   left: 20%;
+    margin: 0;
+    width: 80%;
     padding:5%;
-    background-image: url(images/fond.jpg);
+    top: 200px;
+    
+    
     
 }
 .stone{
     width: 95%;
     border-radius:30px ;
-    padding: 2% 12% 2% 12%;
-    background-image: url(images/fond-texture-mur-blanc-beton-blanc.jpg);
+    padding: 2% 10% 2% 10%;
+    box-shadow: 5px 5px 15px black;
+    background-image: url(images/7070.jpg);
 }
-p{
-    width: 95%;
-    font-size: 2vw;
-    color: black;
+.story{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
     margin: 0 auto;
     text-align: center;
+    font-weight: bold;
 }
 
 @media screen and (max-width:762px ){
-
-   
-    .epee{
-        display: none;
-     }
+    .infos {
     
-    .bolter{
-  
-   margin-top:255px;
-    left: 49px;
-    scale: 0.6;
-    transform: rotateZ(315deg);
-  
-  
-
-     }
-     .carousel {
         position: absolute;
-        width: 70%;
+        
+         margin: 0;
+         width: 80%;
+         padding:5%;
+         top: 200px;
+        
+         
+         
+         
+     }
+     .stone{
+         width: 95%;
+         height: 100%;
+         border-radius:30px ;
+         padding: 2% 10% 2% 10%;
+         box-shadow: 5px 5px 15px black;
+         background-image: url(images/fond.jpg);
+     }
+     .story{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         width: 100%;
+         font-size:initial;
+         color: rgb(255, 255, 255);
+         margin: 0 auto;
+         text-align: center;
+         font-weight: bold;
+     }
+
+     .carousel-inner {
+        width:100%;
+        height: aspect-ratio 1/1; 
+       
+        
+    }
+    .carousel {
+        position: absolute;
+        width: 80%;
+        top: 300px;
         height: aspect-ratio 1/1;
+        
     
 }
+   
+  
 }
 @media screen and (max-width:390px ){
+    .accueil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
     
+    .infos {
     
-
-    .epee{
-        display: none;
-     }
-    
-    .bolter{
-    left: -70px;
-    scale:0.5;
-    transform: rotateZ(315deg);
-  
-  
-
-     }
-     .carousel {
         position: absolute;
-        width: 70%;
+         margin: 0 auto;
+         width: 80%;
+         padding:5%;
+         top: 200px;
+        
+         
+         
+         
+     }
+     .stone{
+         width: 95%;
+         height: 100%;
+         border-radius:30px ;
+         padding: 2% 10% 2% 10%;
+         box-shadow: 5px 5px 15px black;
+         background-image: url(images/fond.jpg);
+     }
+     .story{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         width: 100%;
+         font-size:initial;
+         color: rgb(255, 255, 255);
+         margin: 0 auto;
+         text-align: center;
+         font-weight: bold;
+     }
+
+     .carousel-inner {
+        width:100%;
+        height: aspect-ratio 1/1; 
+       
+        
+    }
+    .carousel {
+        position: absolute;
+        width: 80%;
+        top: 300px;
         height: aspect-ratio 1/1;
-        margin: 0 auto;
-}
-p{
-   width:95%;
-    font-size: 5vw;
+        
     
 }
 }
 .shop{
     display: flex;
     justify-content: center;
-    background-image: url(images/fond.jpg);
+   /* background-image: url(images/fond.jpg);*/
 }
 h2{
    width: 100%;
@@ -253,7 +318,7 @@ img.picture {
     width: 100%;
     height: aspect-ratio 1/1;
     border: 5px solid rgb(255, 255, 255);
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.5);
 }
 .description{
     display: flex;
@@ -270,5 +335,4 @@ img.picture {
     font-size:2vw;
     color: black;
 }
-    
     
